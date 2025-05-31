@@ -80,8 +80,7 @@ nav ul li a {
 
 .imagem-hero img {
   max-width: 300px;
-  border-radius: 200px;
-  order: -1;
+  border-radius: 100px;
 }
 
 .sobre-nos {
