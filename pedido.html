@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dads Pizza - Pedidos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="topo">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Cardápio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <img src="logo.png" alt="Logo Dads Pizza" class="logo2" />
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>FAÇA SEU PEDIDO</h1>
+   
+    <div class="botoes">
+      <button onclick="mostrarCategoria('lanches')">Lanches</button>
+      <button onclick="mostrarCategoria('pizzas')">Pizzas</button>
+      <button onclick="mostrarCategoria('fritas')">Fritas</button>
+      <button onclick="mostrarCategoria('omeletes')">Omeletes</button>
+      <button onclick="mostrarCategoria('bebidas')">Bebidas</button>
+    </div>
+
+    <div id="itens">
+      <div class="categoria" id="lanches">
+        <div class="item">
+          <img src="xburguer.jpg" alt="X-Burguer">
+          <p>X-Burguer    20,00</p>
+          <p class="descricao">Hambúrguer com queijo, alface, tomate e maionese especial.</p>
+          
+           <button onclick="mostrarFormulario(this, 'X-Burguer')">Fazer pedido</button>
+            <div class="formulariodopedido" style="display: none;">
+            <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+</div>
+
+ </div>
+
+      
+   <div class="item">
+    <img src="xtudo.jpg" alt="X-Tudo">
+    <p>X-Tudo – R$ 25,00</p>
+    <p class="descricao">Hambúrguer com presunto, queijo, ovo, bacon, alface, tomate, milho e maionese especial.</p>
+    <button onclick="mostrarFormulario(this, 'X-Tudo')">Fazer pedido</button>
+            <div class="formulariodopedido" style="display: none;">
+
+            <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+    </div>
+  </div>
+  </div>
+  
+
+      <div class="categoria" id="pizzas">
+        <div class="item">
+          <img src="pizza.png" alt="Pizza Calabresa">
+          <p>Pizza Calabresa TAM G  70,00</p>
+            <p class="descricao">Pizza Calabresa  Tam G– Molho de tomate, mussarela, calabresa fatiada, cebola e orégano
+             </p>
+                  <button onclick="mostrarFormulario(this, 'pizzacalabreza')">Fazer pedido</button>
+                <div class="formulariodopedido" style="display: none;">
+                <input type="text" placeholder="Nome" class="nome" />
+                <input type="text" placeholder="Seu endereço" class="endereco" />
+                <input type="number" min="1" value="1" class="quantidade" />
+                <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+    </div>
+        </div>
+        
+         <div class="item">
+          <img src="pizza4queijos.jpg" alt="Pizza quatroqueijos">
+          <p>Pizza Quatro Queijos TAM G 70,00</p>
+         <p class= "descricao" >Molho de tomate, mussarela, presunto, ovo cozido, cebola, pimentão, azeitonas e orégano
+         </p>
+          <button onclick="mostrarFormulario(this, 'pizza4queijos')">Fazer pedido</button>
+            <div class="formulariodopedido" style="display: none;">
+             <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+    </div>
+        </div>
+        <div class="item">
+          <img src="pizzaportuguesa.jpg" alt="Pizza Portuguesa">
+          <p>Pizza Portuguesa  TAM G 70,00</p>
+            <p class="descrição" > Molho de tomate, mussarela, presunto, ovo cozido, cebola, pimentão, azeitonas e orégano></p>
+            <button onclick="mostrarFormulario(this, 'pizzaportuguesa')">Fazer pedido</button>
+             <div class="formulariodopedido" style="display: none;">
+              <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+    </div>
+        </div>
+      </div>
+
+      <div class="categoria" id="fritas">
+        <div class="item">
+          <img src="fritas.jpg" alt="Fritas">
+          <p>Fritas    23.00</p>
+            <p class="descrição" > Batata palito preparada com óleo vegetal e bacon acompanhada de molho especial da casa </p>
+           <button onclick="mostrarFormulario(this, 'fritas')">Fazer pedido</button>
+            <div class="formulariodopedido" style="display: none;">
+            <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+
+        </div>
+        </div>
+       </div>
+
+      <div class="categoria" id="omeletes">
+        <div class="item">
+          <img src="omelete.jpg" alt="Omelete">
+          <p>Omelete   SERVE 2 PESSOAS 24,00</p>
+          <p class="descrição"> Ovos batidos recheados com presunto, mussarela, tomate, cebola e orégano e bacon  </p>
+           <button onclick="mostrarFormulario(this, 'omeletes')">Fazer pedido</button>
+
+             <div class="formulariodopedido" style="display: none;">
+              <input type="text" placeholder="Nome" class="nome" />
+              <input type="text" placeholder="Seu endereço" class="endereco" />
+              <input type="number" min="1" value="1" class="quantidade" />
+              <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+      
+        </div>
+        </div>
+      </div>
+
+      <div class="categoria" id="bebidas">
+        <div class="item">
+          <img src="suco.jpg" alt="Suco">
+          <p>Suco    5,00</p>
+             <button onclick="mostrarFormulario(this, 'suco')">Fazer pedido</button>
+             <div class="formulariodopedido" style="display: none;">
+              <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="cocacola.jpg" alt="Coca-cola">
+          <p>Refrigerante Coca-cola  2 litros  10,00</p>
+          <button onclick="mostrarFormulario(this, 'cocacola')">Fazer pedido</button>
+             <div class="formulariodopedido" style="display: none;">
+              <input type="text" placeholder="Nome" class="nome" />
+            <input type="text" placeholder="Seu endereço" class="endereco" />
+            <input type="number" min="1" value="1" class="quantidade" />
+            <button onclick="confirmarPedido(this)">Confirmar Pedido</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function mostrarCategoria(categoria) {
+      const categorias = document.querySelectorAll(".categoria");
+      categorias.forEach(cat => {
+        cat.style.display = "none";
+      });
+
+      const selecionado = document.getElementById(categoria);
+      if (selecionado) {
+        selecionado.style.display = "flex";
+      }
+    
+}
+  function fazerPedido(nome) {
+  alert("Você pediu: " + nome+ "  Pedido realizado com sucesso!");
+    }
+    function mostrarFormulario(botao, item) {
+  const itemDiv = botao.parentElement;
+  const formulario = itemDiv.querySelector(".formulariodopedido");
+
+ 
+  document.querySelectorAll(".formulariodopedido").forEach(f => f.style.display = "none");
+  formulario.style.display = "block";
+  formulario.dataset.item = item;
+}
+
+function confirmarPedido(botao) {
+  const form = botao.parentElement;
+  const endereco = form.querySelector(".endereco").value;
+  const quantidade = form.querySelector(".quantidade").value;
+  const item = form.dataset.item;
+
+  if (endereco && quantidade > 0) {
+    alert(`Pedido confirmado!\nProduto: ${item}\nEndereço: ${endereco}\nQuantidade: ${quantidade}`);
+
+    form.style.display = "none";
+  } else {
+    alert("Por favor, preencha o endereço e a quantidade.");
+  }
+}
+ 
+   </script>
+ 
+</body>
+</html>
