@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="contact-container">
+    <h1>Fale Conosco</h1>
+    <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+    <!-- Substitua SEU_EMAIL por seu e-mail real -->
+    <form class="contact-form" action="https://formsubmit.co/SEU_EMAIL" method="POST">
+      
+      <!-- Anti-spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+      <label for="nome"><i class="fas fa-user"></i> Nome</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem"><i class="fas fa-comment-dots"></i> Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
 
